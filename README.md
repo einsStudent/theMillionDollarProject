@@ -2,7 +2,7 @@
 
 This project will make us rich!
 
-Mit dem kommenden Urheberrechtsgesetzen - unter anderem Artikel 13 - braucht es Uploadfilter um Plattformen vor illegal hochgeladenen Content zu schützen. 
+Mit dem kommenden Urheberrechtsgesetzen - unter anderem Artikel 13 - braucht es Uploadfilter um Plattformen vor illegal hochgeladenemß Content zu schützen. Realisiert durch eine Microservice Struktur in der Cloud, soll es Kunden leicht zugänglich und bedienbar gemacht werden.
 
 ### Breiche in denen gefiltert wird:
 - Literatur
