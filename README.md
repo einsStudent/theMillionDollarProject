@@ -10,10 +10,8 @@ Mit dem kommenden Urheberrechtsgesetzen - unter anderem Artikel 13 - braucht es 
 - Bilder
 - Musik/Audio Spurenzulade
 
-### Stakeholder
+### Stakeholder / Geschäftsmodel
 Holder sind zu einem Urheberrechtsorganisationen, dennen wir Melden wann eine Plattform gegen das Urheberrecht verstößt.
-Die mittelständigen Plattform Betreiber selbest sind auch unsere Kunden, welchen wir eine sichere Filterung der hochzuladenden Inhalte garantieren.
-
-### Geschäftsmodel
+Die mittelständigen Plattform Betreiber selbest sind auch unsere Kunden, welchen wir eine sichere Filterung der hochzuladenden Inhalte garantieren. Zudem sollen durch Web-Crawler nicht Customer-Plattformen durchsucht werden und bei Verstoß auf die jeweiligen Lizenzen hingewießen werden.
 
 ![Diagram](VorläufigesGeschäftsmodell.jpg)
