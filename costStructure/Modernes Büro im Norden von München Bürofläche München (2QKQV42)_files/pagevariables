@@ -1,0 +1,18 @@
+var IwAG = {
+  $: jQuery.noConflict(),
+  Vars: {
+    autoSizeScript: "/_scripts/mvc/_plugin/jquery.autosize.js",
+    youtubeScript: "/_scripts/mvc/expose/rwd/expose.youtube.js",
+    mapRoutingModule: "/_scripts/mvc/expose/expose.map.routingmodule.js",
+    RestApiServiceUrl: "//api.immowelt.de/rest/",
+    TestSystem: false,
+    IWhost: "https://www.immowelt.de/",
+    IWMediahost: "//media-static.immowelt.org/",
+    MediaId: 0,
+    DeviceType: "desktop",
+    IsApple: false,
+    breakPointOffCanvas: 980,
+    TrackingValues: [],
+    IwRestApiKey: "3C4F740271A64BBFB933E413D22F3A85"
+  }
+};

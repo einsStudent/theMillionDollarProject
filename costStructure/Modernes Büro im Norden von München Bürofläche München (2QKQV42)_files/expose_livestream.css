@@ -1,0 +1,57 @@
+﻿.livestream_wrapper{height:550px !important}
+.livestream_area{height:100%;width:100%}
+.livestream_pending{background:url('../../global_rwd/image/background/bg_livestream_pending.jpg');background-size:cover;z-index:3;position:relative;color:#fff;text-align:center;padding:90px 20px 0 20px;font-weight:100;height:100%;width:100%}
+.livestream_pending .live{background:#e11818;border-radius:6px;padding:12px 15px 13px 15px;margin-right:7px;display:inline-block;text-transform:uppercase;font-size:22px;letter-spacing:2px;font-weight:700;margin-bottom:30px}
+.livestream_pending .headline{font-size:24px;font-weight:400}
+.livestream_pending .link_02{color:#fff}
+.livestream_pending .link_02:hover{color:#ffb200}
+.livestream_pending .countdown{padding-top:25px;width:600px;text-align:center;display:flex;justify-content:center;align-items:center;margin:0 auto}
+.livestream_pending .counter{float:left;width:25%}
+.livestream_pending .counter .label{text-transform:uppercase;color:#ffb200;display:block;font-weight:500;letter-spacing:3px}
+.livestream_pending .counter .value{font-size:56px;font-weight:600;display:block;line-height:56px;padding-bottom:14px}
+.livestream_active{background:#283138;background-size:cover;z-index:3;position:relative;padding:30px 0 60px 0;height:100%;width:100%}
+.livestream_active .iw_content{height:100%}
+.stream{width:calc(60% - 25px);float:left;margin-right:25px;background:#000;height:100%;border-radius:4px}
+.stream .live_small{background:#e11818;border-radius:3px;padding:2px 10px 3px 10px;margin-right:7px;display:inline-block;text-transform:uppercase;font-size:13px;letter-spacing:1px;font-weight:700;color:#fff;position:absolute;right:6px;top:15px;z-index:2}
+.chat{width:40%;float:left;height:100%;border-radius:4px}
+.chat .chatheader{background:#48525a;padding:15px 20px;font-size:16px;font-weight:400;border-top-right-radius:4px;border-top-left-radius:4px;box-shadow:0 3px 3px 0 rgba(72,82,90,.3);position:relative;color:#fff}
+.chat .chatheader a{color:#a3aeb7;text-decoration:none;border-bottom:1px dotted #aaa;padding-bottom:2px;transition:all 200ms ease-out 0}
+.chat .chatheader a:hover{border-bottom:1px solid #aaa;color:#fff}
+.chat .chatheader i{margin-left:5px}
+.chat .chatname{color:#a3aeb7}
+.chat .chatheader .usercount{color:#a3aeb7;position:absolute;top:15px;right:20px}
+.chat .chatheader .usercount :before{margin-right:5px}
+.chat .chatarea{background:#d0d2d4;max-height:353px;overflow-y:auto;padding:10px 0 15px 0;height:100%;width:100%}
+.chat .chatarea .chatname_layer{position:absolute;top:51px;width:100%;height:355px;background:#d0d2d4;z-index:2;text-align:center;padding:60px 30px}
+.chat .chatarea .chatname_layer input{width:calc(60% - 33px)}
+.chat .chatarea .chatname_layer .picker_wrapper{width:calc(40% - 33px)}
+.chat .msg{margin-bottom:2px}
+.chat .msg_content{background:#fff;border-bottom:1px solid #ddd;padding:5px 10px;margin:0 15px;border-radius:4px;box-shadow:0 1px 0 0 rgba(0,0,0,.1);display:inline-block}
+.chat .msg_content.dark{background:#6b757d;color:#fff;border-bottom:1px solid #6b757d;box-shadow:none}
+.chat .msg_meta{padding:0 15px;font-size:13px;font-weight:600;margin:6px 0 1px 0}
+.chat .msg_meta .timestamp{color:#666;font-weight:400}
+.chat .chatfooter{padding:10px 0 10px 10px;background:#48525a;border-bottom-left-radius:4px;border-bottom-right-radius:4px;position:absolute;bottom:0;width:100%}
+.chat .chatfooter input{float:left;width:calc(100% - 63px);margin:0 10px 0 0;background:transparent;border:none;border-bottom:2px solid #8996a0;border-radius:0;color:#fff;transition:border 550ms ease-out 0 !important}
+::-webkit-input-placeholder{color:#a3aeb7}
+::-moz-placeholder{color:#a3aeb7}
+:-ms-input-placeholder{color:#a3aeb7}
+:-moz-placeholder{color:#a3aeb7}
+.chat .chatfooter input:focus{border-bottom:2px solid #fff}
+.chat .icon-angle-right{padding:5px 15px}
+.livestream_wrapper .btn_01,.livestream_wrapper .btn_02{width:initial !important}
+.chat .icon-angle-right:before{font-size:24px;line-height:25px}
+.chat .icon-angle-right:before,.chat .icon-check:before{padding:0 !important;width:15px}
+.chat .welcome{padding:40px 20px;color:#4b4e52}
+.chat h4{margin:15px 0 15px 0;font-weight:600;font-size:18px;color:#4b4e52}
+.chat .welcome i,.chat .chatname_layer i{font-size:68px;color:#b0b2b5}
+@media(max-width:980px){.stream,.chat{width:100%;margin:0}
+.chat .chatfooter{bottom:initial}
+.livestream_active{padding-bottom:80px}
+.livestream_wrapper{height:570px !important}
+.livestream_wrapper .btn_02{float:left}
+}
+@media(max-width:600px){.livestream_pending .countdown{width:initial}
+.livestream_pending .counter .value{font-size:34px;padding-bottom:0}
+.livestream_pending .counter .label{text-transform:none;letter-spacing:initial}
+.livestream_wrapper .btn_02{float:none}
+}

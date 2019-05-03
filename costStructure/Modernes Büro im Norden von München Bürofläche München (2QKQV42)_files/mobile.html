@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0146)https://tags.tiqcdn.com/utag/axelspringer/immowelt-immowelt.de/prod/mobile.html?tag=axelspringer%2Fimmowelt-immowelt.de%2Fprod%2F162&cookie_spoof= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Tealium Tag Sandbox</title><script src="./inferredEvents.js.Download" async=""></script><script src="./181315792497989" async=""></script><script type="text/javascript" async="" charset="utf-8" src="./fbevents.js.Download" id="utag_162"></script><script type="text/javascript" async="" charset="utf-8" src="./utag.139.js.Download" id="utag_axelspringer.immowelt-immowelt.de_139"></script><script type="text/javascript" async="" charset="utf-8" src="./utag.127.js.Download" id="utag_axelspringer.immowelt-immowelt.de_127"></script><script type="text/javascript" async="" charset="utf-8" src="./utag.23.js.Download" id="utag_axelspringer.immowelt-immowelt.de_23"></script><script type="text/javascript" async="" charset="utf-8" src="./utag.300.js.Download" id="utag_axelspringer.immowelt-immowelt.de_300"></script><script type="text/javascript" async="" charset="utf-8" src="./utag.162.js.Download" id="utag_axelspringer.immowelt-immowelt.de_162"></script><script type="text/javascript" async="" charset="utf-8" src="./i.js.Download"></script></head>
+  <body>
+    <!-- SANDBOX FUNCTIONALITY (START) -->
+    <script type="text/javascript">
+      // centralized logger function, directs all status-type outputs
+      function sandboxLogger(message) {
+        // console.log("[Sandbox " + tag_id + "] " + message);
+        //if (typeof utag != "undefined" && utag.hasOwnProperty("DB")) {
+        //  utag.DB("[Sandbox " + tag_id + "] " + message,);
+        //}
+      }
+
+      // gets a query parameter by name, returns emtpy string if not found
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split('=');
+          if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+          }
+        }
+        return "";
+      }
+
+      // receive a cross-window event from the parent frame
+      function receiveMessage(event) {
+        // don't react to the message unless it comes from the parent frame directly
+        var re = new RegExp("^" + event.origin);
+        if (re.test(document.referrer) != true) return;
+
+        var message = event.data;
+        message.tag_id = Number(message.tag_id);
+        var shouldFireEvent = (message && message.source === "tealium" && message.tag_id == tag_id);
+
+        if(!shouldFireEvent) {
+          sandboxLogger("ignored event with tag_id " + message.tag_id , event);
+        }
+
+        if (shouldFireEvent) {
+          sandboxLogger("firing " + message.event_type + " event to tag " + tag_id, message.data);
+          var trackObj = {
+            event: message.event_type,
+            data: message.data,
+            cfg: {
+              uids: [message.tag_id]
+            }
+          };
+          utag.track(trackObj);
+          sandboxLogger("tracked with " + JSON.stringify(trackObj));
+        }
+      }
+
+      // get the query string params (set by the sandboxed template in the parent frame)
+      var tag_path = getQueryVariable("tag");
+      var cookie_spoof = getQueryVariable("cookie_spoof");
+
+      var base_url = "https://tags.tiqcdn.com/utag/";
+      var utag_url = base_url + tag_path.replace(/\/([0-9]+)$/, "/utag.js?cb=1");
+      var tag_url = base_url + tag_path.replace(/\/([0-9]+)$/, "/utag.$1.js?sandboxed");
+      var tag_id = Number(tag_path.split("/")[tag_path.split("/").length - 1]);
+
+      // set up the event listener for incoming messages from parent
+      window.addEventListener("message", receiveMessage, false, false);
+      sandboxLogger("added event listener");
+
+      // initialize UDO object
+      utag_data = {};
+      // spoof the cookie if the query parameter is filled
+      if (typeof cookie_spoof == "string" && cookie_spoof != "") {
+        utag_data["cp.OPTOUTMULTI"] = cookie_spoof;
+        sandboxLogger("spoofing cookie value (decoded) : " + decodeURIComponent(cookie_spoof));
+      } else {
+        sandboxLogger("loading (but not executing) all tags in sandbox - OPTOUTMULTI (Privacy Manager) cookie found / no querystring means we can't block those loads");
+      }
+
+    </script>
+    <script type="text/javascript">
+      var utag_cfg_ovrd = {};
+      utag_cfg_ovrd.noview = true;
+      // don't count a new session (already counted in the parent)
+      utag_cfg_ovrd.no_session_count = true;
+    </script>
+    <!-- SANDBOX FUNCTIONALITY (END) -->
+    <script type="text/javascript" src="./utag.js.Download"></script>
+  
+</body></html>

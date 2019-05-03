@@ -1,0 +1,11 @@
+﻿.kontaktanfrage_gewerbeexpose{padding:50px 0 40px 0}
+.kontaktanfrage_gewerbeexpose #anbieterprofilKontaktContainer{margin-right:-20px}
+.kontaktanfrage_gewerbeexpose img.kontakt_img{height:auto;width:auto;max-width:150px;max-height:150px;margin-top:10px}
+.kontaktanfrage_gewerbeexpose .btn_group .input-validation-error+label{background-color:#f7d8d8}
+.kontaktanfrage_gewerbeexpose .input_vorname{width:50%;padding-right:15px}
+.kontaktanfrage_gewerbeexpose .input_name{width:50%}
+.kontaktanfrage_gewerbeexpose .textarea{min-height:130px}
+.kontaktanfrage_gewerbeexpose .close_large.icon-close{font-size:22px;background:none !important;color:#aaa;text-decoration:none;float:right;padding-left:10px}
+.kontaktanfrage_gewerbeexpose .icon-map-marker::before,.kontaktanfrage_gewerbeexpose .icon-user::before,.kontaktanfrage_gewerbeexpose .icon-clock::before{text-indent:-30px}
+.kontaktanfrage_gewerbeexpose h2{font-size:2.055em;font-weight:300}
+.kontaktanfrage_gewerbeexpose .salutation{padding-right:15px}

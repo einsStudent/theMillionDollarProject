@@ -1,0 +1,48 @@
+﻿.owl-carousel{margin:30px;width:auto}
+.owl-carousel.no_controls{margin:30px 0}
+.owl-theme .owl-controls .owl-nav{display:block;margin:-30px 0;overflow:visible;position:absolute;top:50%;width:100%}
+.owl-theme .owl-controls .owl-nav div{display:inline-block;height:60px;line-height:60px;position:absolute;text-align:center;width:40px}
+.owl-theme .owl-controls .owl-nav .owl-prev{left:-40px}
+.owl-theme .owl-controls .owl-nav .owl-next{right:-40px}
+.owl-theme .owl-controls .owl-nav .disabled{cursor:default}
+.owl-theme .owl-item.loading{min-height:150px;background:url(AjaxLoader.gif) no-repeat center center}
+.owl-theme .owl-item .item img,.owl-theme .owl-item .item .img_center_wrapper{height:100%;position:absolute;width:100%}
+.expose_slider.owl-theme .owl-item .item img,.expose_slider.owl-theme .owl-item .item .img_center_wrapper{position:static}
+.sixitemsgallery.owl-theme .owl-item .item img,.sixitemsgallery.owl-theme .owl-item .item .img_center_wrapper,.list_carousel.owl-theme .owl-item .item img,.list_carousel.owl-theme .owl-item .item .img_center_wrapper{height:inherit;position:relative}
+.no_image_pic{bottom:40%;color:#999 !important;position:absolute;text-align:center;width:inherit}
+.no_image_pic .icon-camera{font-size:30px;padding-bottom:10px}
+.owl-theme.sixitemsgallery .owl-item.active .item img{min-height:inherit}
+.owl-theme .owl-controls .owl-dots{margin:10px -30px;text-align:center}
+.owl-theme .owl-controls .owl-dot{display:inline-block;zoom:1;*display:inline;height:24px;text-align:center;width:24px}
+.owl-theme .owl-controls .owl-dot span{background-color:#ccc;border-radius:6px;display:block;height:12px;margin:6px;width:12px}
+.owl-theme .owl-controls .owl-dot.active span,.owl-theme .owl-controls.clickable .owl-dot:hover span{background-color:#ffb200}
+.owl-carousel .owl-item{position:relative}
+.owl-carousel .owl-item .item,.owl-carousel .owl-item .item>a{width:inherit}
+.owl-carousel .owl-item .item>a{padding-bottom:74.074%;display:block}
+.owl-theme .item *,.owl-theme .item:hover *{text-decoration:none;color:inherit}
+.owl-theme .price_label{color:#fff !important;background:#222;font-weight:700;padding:5px 15px;position:absolute;bottom:40px}
+.owl-theme .description_label{background:-moz-linear-gradient(top,rgba(0,0,0,0)0%,rgba(0,0,0,.99)99%,rgba(0,0,0,1)100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,.99)),color-stop(100%,rgba(0,0,0,1)));background:-webkit-linear-gradient(top,rgba(0,0,0,0)0%,rgba(0,0,0,.99)99%,rgba(0,0,0,1)100%);background:-o-linear-gradient(top,rgba(0,0,0,0)0%,rgba(0,0,0,.99)99%,rgba(0,0,0,1)100%);background:-ms-linear-gradient(top,rgba(0,0,0,0)0%,rgba(0,0,0,.99)99%,rgba(0,0,0,1)100%);background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.99) 99%,rgba(0,0,0,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#000000',GradientType=0);bottom:0;color:#fff !important;margin:-39px 0 0;padding:9px 13px;position:absolute;text-decoration:none !important;width:inherit}
+.list_carousel.owl-carousel,.sixitemsgallery.owl-carousel{margin-bottom:20px;margin-top:0}
+.list_carousel .img_center_wrapper{padding-bottom:56.25% !important}
+.list_carousel a.img_center_wrapper:hover+.img_center_wrapper a{color:#e65100}
+.sixitemsgallery .img_center_wrapper{padding-bottom:70%}
+.list_carousel.owl-theme .item .img_center_wrapper.top_object_placeholder{position:absolute;z-index:0}
+.top_object_placeholder+.img_center_wrapper>.img_center{background:#fff}
+.img_center .vert_center_wrapper{display:table;height:100%}
+.img_center .vert_center_wrapper .vert_center{display:table-cell;height:inherit;vertical-align:middle}
+@media(max-width:400px){.owl-carousel.sixitemsgallery{margin:20px auto;width:200px}
+}
+@media(max-width:470px){.owl-theme .owl-controls .owl-nav{margin:-52px 0}
+.owl-theme.only_one_item .owl-controls .owl-nav{margin:-30px 0}
+.owl-theme.only_one_item .owl-dots{display:none !important}
+}
+@media(min-width:471px)and (max-width:600px),(max-width:360px){.owl-carousel{margin:30px 20px}
+.owl-carousel .owl-stage-outer{width:inherit}
+.owl-theme .owl-controls .owl-nav .owl-next{right:-35px}
+.owl-theme .owl-controls .owl-nav .owl-prev{left:-35px}
+.owl-theme .owl-controls .owl-nav div:after{font-size:40px !important}
+}
+@media(min-width:471px)and (max-width:600px){.list_carousel .img_center_wrapper{padding-bottom:74.074% !important}
+}
+@media(max-width:640px){.list_carousel.owl-carousel,.sixitemsgallery.owl-carousel{margin-top:20px}
+}

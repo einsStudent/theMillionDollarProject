@@ -1,0 +1,16 @@
+﻿#app_smartbanner{display:none}
+.app_smartbanner{height:90px;position:relative;overflow:hidden;border-bottom:solid 1px #ccc;-webkit-box-shadow:0 5px 9px 0 rgba(51,51,51,.18);-moz-box-shadow:0 5px 9px 0 rgba(51,51,51,.18);box-shadow:0 5px 9px 0 rgba(51,51,51,.18);z-index:1000;top:50px}
+.app_smartbanner .icon-close{display:inline-block;font-size:20px;padding:34px 10px;float:left}
+.app_smartbanner .icon-close:before{color:#777}
+.app_smartbanner img.logo{margin:15px 12px 0 0;float:left}
+.app_smartbanner .text_wrapper{float:left}
+.app_smartbanner .title{font-size:13px;float:left;margin-top:19px;position:absolute;line-height:16px;margin-right:110px}
+.app_smartbanner .button{position:absolute;right:20px;top:32px;width:auto;font-size:12px;padding:1px 15px}
+.app_smartbanner .star{font-size:13px;width:62px;overflow:visible;margin-top:1px}
+.app_smartbanner .star:after{width:48px}
+.app_smartbanner .star::before{color:#777;width:12px}
+@media(max-width:360px){.app_smartbanner .title .store{display:none}
+.app_smartbanner .title{margin-top:14px;margin-right:20px}
+.app_smartbanner .button{left:108px;top:50px;right:auto}
+.app_smartbanner .star{margin-top:0}
+}
